@@ -2,7 +2,7 @@ export const ROUTES = { // Роуты
   homePage: "/",
   about: "/about",
   films: "/films",
-  user: "/user",
+  // user: "/user",
   filmDetails: "/films/:id",
   startShow: "/films/:id/start-show",
   filmShow: "/film-show/:id",
