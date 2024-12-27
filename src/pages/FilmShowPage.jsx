@@ -27,15 +27,15 @@ export const FilmShowPage = () => {
 
   return (
     <div className="film-show_page">
-      <h1 class="film-name">{filmDetails.title}</h1>
-      <p class="film-description">{filmDetails.description}</p>
+      <h1 className="film-name">{filmDetails.title}</h1>
+      <p className="film-description">{filmDetails.description}</p>
       <ReactPlayer 
       light
         url={filmDetails.video}
         playing
       /> 
 
-      <a class="google-link" href={`https://www.google.com/search?q=${encodeURIComponent(filmDetails.title)}`} target="_blank" rel="noopener noreferrer">Поиск в Google</a>
+      <a className="google-link" href={`https://www.google.com/search?q=${encodeURIComponent(filmDetails.title)}`} target="_blank" rel="noopener noreferrer">Поиск в Google</a>
     </div>
   );
 };
