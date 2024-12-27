@@ -10,9 +10,7 @@ import { FilmDetails, filmLoader } from "./pages/FilmDeatilsPage";
 import { ErrorPage } from "./pages/ErrorPage";
 import { HomePage } from "./pages/HomePage";
 import { FilmShowPage } from "./pages/FilmShowPage";
-import { ROUTES } from "./constants";
-import { ProtectedRoute } from "./components/ProtectedRoute";
-import { UserPage } from "./pages/UserPage";
+
 import { Loader } from "./components/Loader";
 import { FilmFacts } from "./components/FilmFacts";
 import { FilmSlogan } from "./components/FilmSlogan";
@@ -52,14 +50,7 @@ const router = createBrowserRouter(
         }
       />
 
-      <Route
-        path={ROUTES.user}
-        element={
-          <ProtectedRoute isAllowed={false}> 
-            <UserPage />
-          </ProtectedRoute>
-        }
-      />
+    
 
     <Route path="/film-show/:id" element={<FilmShowPage />} />
 
